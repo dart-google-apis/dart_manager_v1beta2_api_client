@@ -729,6 +729,8 @@ class LbModule {
 
   core.String portRange;
 
+  core.String sessionAffinity;
+
   core.List<core.String> targetModules;
 
   /** Create new LbModule from JSON data */
@@ -747,6 +749,9 @@ class LbModule {
     }
     if (json.containsKey("portRange")) {
       portRange = json["portRange"];
+    }
+    if (json.containsKey("sessionAffinity")) {
+      sessionAffinity = json["sessionAffinity"];
     }
     if (json.containsKey("targetModules")) {
       targetModules = json["targetModules"].toList();
@@ -771,6 +776,9 @@ class LbModule {
     }
     if (portRange != null) {
       output["portRange"] = portRange;
+    }
+    if (sessionAffinity != null) {
+      output["sessionAffinity"] = sessionAffinity;
     }
     if (targetModules != null) {
       output["targetModules"] = targetModules.toList();

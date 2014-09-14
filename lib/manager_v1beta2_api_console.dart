@@ -6,7 +6,8 @@ import 'package:google_manager_v1beta2_api/src/console_client.dart';
 
 import "package:google_manager_v1beta2_api/manager_v1beta2_api_client.dart";
 
-/** The Deployment Manager API allows users to declaratively configure and deploy Cloud resources on the Google Cloud Platform. */
+/** The Deployment Manager API allows users to declaratively configure, deploy and run complex solutions on the Google Cloud Platform. */
+@deprecated
 class Manager extends Client with ConsoleClient {
 
   /** OAuth Scope2: View and manage your applications deployed on Google App Engine */

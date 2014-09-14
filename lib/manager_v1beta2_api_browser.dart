@@ -5,7 +5,8 @@ import "package:google_oauth2_client/google_oauth2_browser.dart" as oauth;
 import 'package:google_manager_v1beta2_api/src/browser_client.dart';
 import "package:google_manager_v1beta2_api/manager_v1beta2_api_client.dart";
 
-/** The Deployment Manager API allows users to declaratively configure and deploy Cloud resources on the Google Cloud Platform. */
+/** The Deployment Manager API allows users to declaratively configure, deploy and run complex solutions on the Google Cloud Platform. */
+@deprecated
 class Manager extends Client with BrowserClient {
 
   /** OAuth Scope2: View and manage your applications deployed on Google App Engine */
